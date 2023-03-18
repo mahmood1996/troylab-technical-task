@@ -4,6 +4,7 @@ import 'package:flutter_demo/core/domain/stores/user_store.dart';
 import 'package:flutter_demo/core/utils/current_time_provider.dart';
 import 'package:flutter_demo/core/utils/debouncer.dart';
 import 'package:flutter_demo/core/utils/periodic_task_executor.dart';
+import 'package:flutter_demo/features/auth/domain/use_cases/log_in_use_case.dart';
 //DO-NOT-REMOVE IMPORTS_MOCK_DEFINITIONS
 
 import 'package:flutter_demo/navigation/app_navigator.dart';
@@ -16,6 +17,8 @@ class MockAppNavigator extends Mock implements AppNavigator {}
 //DO-NOT-REMOVE MVP_MOCK_DEFINITION
 
 // USE CASES
+
+class MockLogInUseCase extends Mock implements LogInUseCase {}
 
 //DO-NOT-REMOVE USE_CASE_MOCK_DEFINITION
 

@@ -1,0 +1,8 @@
+LoginPresenter
+- (Done) disable Login Button if username is empty.
+- (Done) disable Login Button if password is empty.
+- (Done) enable Login Button if username and password are at least more than 1 character.
+- (->) show loading before calling usecase with username and password.
+- (Done) call Usecase with username and password.
+- (Done) show a success dialog if the user logs in successfully.
+- (Done) show an error dialog if login fails.

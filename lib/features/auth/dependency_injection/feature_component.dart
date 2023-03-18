@@ -68,6 +68,7 @@ void _configureMvp() {
           (initialParams, _) => LoginPresenter(
             getIt(param1: initialParams),
             getIt(),
+            getIt<LogInUseCase> (),
           ),
         )
         ..registerFactoryParam<LoginPage, LoginInitialParams, dynamic>(

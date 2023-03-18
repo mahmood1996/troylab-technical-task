@@ -1,4 +1,5 @@
 import 'package:flutter_demo/dependency_injection/app_component.dart';
+import 'package:flutter_demo/features/auth/domain/use_cases/log_in_use_case.dart';
 import 'package:flutter_demo/features/auth/login/login_initial_params.dart';
 import 'package:flutter_demo/features/auth/login/login_navigator.dart';
 import 'package:flutter_demo/features/auth/login/login_page.dart';
@@ -25,6 +26,7 @@ Future<void> main() async {
     presenter = LoginPresenter(
       model,
       navigator,
+      LogInUseCase(Mocks.userStore),
     );
     page = LoginPage(presenter: presenter);
   }
